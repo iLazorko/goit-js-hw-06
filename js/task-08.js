@@ -28,7 +28,7 @@
  */
 
 const form = document.querySelector(".login-form");
-let rezultLoginForm = {};
+let resultLoginForm = {};
 
 form.addEventListener("submit", onFormSubmit);
 
@@ -42,9 +42,9 @@ function onFormSubmit(event) {
   const formData = new FormData(event.currentTarget);
 
   formData.forEach((value, name) => {
-    rezultLoginForm = { ...rezultLoginForm, [name]: value };
+    resultLoginForm = { ...resultLoginForm, [name]: value };
   });
-  console.log(rezultLoginForm);
+  console.log(resultLoginForm);
 
   form.reset();
 }

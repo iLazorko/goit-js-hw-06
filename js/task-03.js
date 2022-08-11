@@ -25,11 +25,11 @@ const images = [
   },
 ];
 
-const pictureGalary = document.querySelector(".gallery");
-console.log(pictureGalary);
+const pictureGallery = document.querySelector(".gallery");
+console.log(pictureGallery);
 
 images.map((item) => {
-  pictureGalary.insertAdjacentHTML(
+  pictureGallery.insertAdjacentHTML(
     "beforeend",
     `<img src='${item.url}' alt ='${item.alt}' class='gallery-item'>`
   );

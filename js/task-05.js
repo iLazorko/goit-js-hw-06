@@ -12,7 +12,7 @@ const refs = {
   input: document.querySelector("#name-input"),
 };
 
-const inputName = refs.input.addEventListener("input", onInputName);
+refs.input.addEventListener("input", onInputName);
 
 function onInputName(event) {
   if (event.currentTarget.value === "") {

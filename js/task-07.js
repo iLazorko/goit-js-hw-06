@@ -11,6 +11,6 @@
 const inputSlider = document.getElementById("font-size-control");
 const text = document.getElementById("text");
 
-inputSlider.addEventListener("change", () => {
+inputSlider.addEventListener("input", () => {
   text.style.fontSize = `${inputSlider.value}px`;
 });

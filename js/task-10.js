@@ -44,6 +44,7 @@ function createBoxes(amount) {
     newDiv.style.backgroundColor = getRandomHexColor();
     newDiv.style.outline = "1px solid #000000";
     newDiv.style.marginBottom = "10px";
+    newDiv.style.marginTop = "5px";
 
     divEl.append(newDiv);
 
